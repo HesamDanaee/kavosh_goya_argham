@@ -23,7 +23,7 @@ export default function AboutUs() {
   }, [slide]);
 
   const handleSlide = (direction: string) => {
-    const slideWidth = 600; // Replace with your slide width
+    const slideWidth = 600;
     const targetX =
       direction === "left"
         ? (slide - 1) * slideWidth
@@ -95,7 +95,7 @@ export default function AboutUs() {
           <br />
           چه میشنوید؟
         </h1>
-        <SliderButton handler={handleSlide} />
+        <SliderButton handler={handleSlide} slide={slide} />
       </div>
     </section>
   );

@@ -7,22 +7,6 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    fontFamily: {
-      kalame: [
-        "./public/assets/fonts/KalamehWeb/KalamehWeb/woff2/KalamehWeb_Regular.woff2",
-        "./public/assets/fonts/KalamehWeb/KalamehWeb/woff2/KalamehWeb_Bold.woff2",
-        "./public/assets/fonts/KalamehWeb/KalamehWeb/woff2/KalamehWeb_Black.woff2",
-      ],
-      yekan: [
-        "./public/assets/fonts/Yekan/Yekan-Font-master/Qs_Iranyekan.ttf",
-        "./public/assets/fonts/Yekan/Yekan-Font-master/Qs_Iranyekan thin.ttf",
-        "./public/assets/fonts/Yekan/Yekan-Font-master/Qs_Iranyekan medium.ttf",
-        "./public/assets/fonts/Yekan/Yekan-Font-master/Qs_Iranyekan bold.ttf",
-        "./public/assets/fonts/Yekan/Yekan-Font-master/Qs_Iranyekan black.ttf",
-        "./public/assets/fonts/Yekan/Yekan-Font-master/Qs_Iranyekan extrablack.ttf",
-        "./public/assets/fonts/Yekan/Yekan-Font-master/Qs_Iranyekan extrabold.ttf",
-      ],
-    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

@@ -24,7 +24,7 @@ export default function Form() {
   const onSubmit: SubmitHandler<IFormSubmit> = (data) => console.log(data);
 
   return (
-    <article className="w-[600px] h-[600px] max-md:w-[90%] max-md:h-auto  px-12 py-8 flex flex-col justify-evenly bg-white rounded-md shadow-2xl lg:-translate-y-28 lg:translate-x-6 z-[100]">
+    <section className="w-[600px] h-[600px] max-md:w-[90%] max-md:h-auto  px-12 py-8 flex flex-col justify-evenly bg-white rounded-md shadow-2xl lg:-translate-y-28 lg:translate-x-6 z-[100]">
       <h2 className="text-black text-2xl font-kalame font-[900] text-end">
         فرم درخواست مشاوره
       </h2>
@@ -158,6 +158,6 @@ export default function Form() {
         rest="w-full"
         onClick={handleSubmit(onSubmit)}
       />
-    </article>
+    </section>
   );
 }

@@ -43,7 +43,7 @@ export default function Principles() {
           </span>
         </div>
       </div>
-      <Image
+      {/* <Image
         src={union}
         width={300}
         height={300}
@@ -58,7 +58,7 @@ export default function Principles() {
         alt="background"
         objectFit="cover"
         className="absolute -right-24 max-sm:w-[40%]"
-      />
+      /> */}
       <Accordion category={tab} />
       <h3 className="flex text-blue-500 font-[500] hover:cursor-pointer hover:text-blue-600 group">
         <Image

@@ -34,12 +34,12 @@ export default function Services() {
 
       {/* Service Heros*/}
 
-      <article className="w-full h-auto flex flex-col justify-between items-center max-md:my-20 ">
+      <article className="w-full h-auto flex flex-col justify-between items-center max-md:mt-10 ">
         {serviceHeroData.map(
           ({ title, text, buttonText, photo, icon }, index) => (
             <div
               key={generateId()}
-              className={`w-full max-w-[1200px] h-auto my-32 max-lg:h-[900px]  max-lg:flex-col-reverse md:px-10  flex justify-evenly items-center relative after:w-[100px] after:h-[100px]  after:rounded-full after:absolute after:left-0 after:backdrop-blur-3xl after:shadow-2xl after:shadow-[bg-blue-600]   ${
+              className={`w-full max-w-[1200px] h-auto my-32 max-lg:h-[700px]  max-lg:flex-col-reverse md:px-10 flex justify-evenly max-lg:justify-between items-center relative after:w-[100px] after:h-[100px]  after:rounded-full after:absolute after:left-0 after:backdrop-blur-3xl after:shadow-2xl after:shadow-[bg-blue-600]   ${
                 index % 2 !== 0 && "flex-row-reverse "
               } ${index === 0 && ""}`}
             >

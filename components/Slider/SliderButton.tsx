@@ -6,9 +6,10 @@ import rightArrow from "@/public/assets/icons/arrow-right-slider.svg";
 
 interface Props {
   handler: (direction: string) => void;
+  slide: number;
 }
 
-export default function SliderButton({ handler }: Props) {
+export default function SliderButton({ handler, slide }: Props) {
   return (
     <div>
       <div className="w-[120px] flex justify-between items-center">
