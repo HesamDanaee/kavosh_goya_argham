@@ -7,7 +7,7 @@ export default function ListItem({ items }: { items: ListItems }) {
     items.length !== 0 &&
     items.map(({ text, id }) => (
       <li
-        className="text-sm text-black hover:border-b-[2px] border-gray-800 hover:cursor-pointer font-[500]"
+        className="text-sm text-black hover:cursor-pointer relative font-[600] before:h-[1px] before:absolute before:bottom-0 before:left-0 before:right-0 before:bg-[#00000091] before:scale-0 before:transition-all before:origin-bottom-left hover:before:origin-bottom-right hover:before:scale-100 before:duration-100"
         key={generateId()}
         onClick={() => {}}
       >

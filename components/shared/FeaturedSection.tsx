@@ -2,7 +2,7 @@ import Button from "./Button";
 import Image from "next/image";
 
 interface Porps {
-  title: string;
+  title: string | JSX.Element;
   text: string;
   buttonText: string;
   hero?: boolean;
