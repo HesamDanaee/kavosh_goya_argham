@@ -15,6 +15,7 @@ import sliderData from "@/constants/sliderData";
 
 export default function AboutUs() {
   const [slide, setSlide] = useState(1);
+  const lastIndex = slide === sliderData.length - 1;
   const sliderRef = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
     if (sliderRef.current) {
@@ -70,7 +71,7 @@ export default function AboutUs() {
   return (
     <section
       id="aboutus"
-      className="w-full max-w-[1200px] h-[800px] relative flex max-md:flex-col-reverse max-md:h-[1000px] justify-end max-md:justify-evenly items-center"
+      className="w-full max-w-[1200px] h-[800px] relative flex max-md:flex-col-reverse max-md:h-[800px] justify-end max-md:justify-evenly items-center max-lg:pr-4"
     >
       <Image
         src={sliderBg}
@@ -98,7 +99,7 @@ export default function AboutUs() {
           <br />
           چه میشنوید؟
         </h1>
-        <SliderButton handler={handleSlide} slide={slide} />
+        <SliderButton handler={handleSlide} lastIndex={lastIndex} />
       </div>
     </section>
   );
