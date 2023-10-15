@@ -1,5 +1,6 @@
 "use client";
 import Button from "./shared/Button";
+import Link from "next/link";
 import List from "./shared/List";
 import ListItem from "./shared/ListItem";
 import links from "@/constants/navbarLinksData";
@@ -20,17 +21,19 @@ export default function Header() {
         isHeaderVisible && "bg-[#0000002f] py-4 backdrop-blur-[2px]"
       }`}
     >
-      <Button
-        bg="bg-light-blue"
-        size="text-sm"
-        color="text-white"
-        margin=""
-        padding="px-6 py-3"
-        rounded="rounded-lg"
-        hover="hover:bg-blue-600 hover:shadow-md"
-        text="ارتباط با ما"
-        rest="px-2 py-2"
-      />
+      <Link href={"#contactus"}>
+        <Button
+          bg="bg-light-blue"
+          size="text-sm"
+          color="text-white"
+          margin=""
+          padding="px-6 py-3"
+          rounded="rounded-lg"
+          hover="hover:bg-blue-600 hover:shadow-md"
+          text="ارتباط با ما"
+          rest="px-2 py-2"
+        />
+      </Link>
       <div className="w-[70%] max-lg:w-auto max-w-[800px] flex justify-between items-center ">
         <List>
           <ListItem items={links} />

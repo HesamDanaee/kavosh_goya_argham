@@ -11,6 +11,7 @@ import location from "@/public/assets/icons/location.svg";
 // constants
 import { pagesList, serviceList, logos } from "@/constants/footerData";
 import { generateId } from "@/utils/helpers";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -45,7 +46,14 @@ export default function Footer() {
           </h1>
 
           <div className="w-full flex max-md:flex-col-reverse justify-between items-center">
-            <h3 className="text-lg">09127362770</h3>
+            <h3 className="text-lg">
+              <Link
+                href="tel:09127362770"
+                className="hover:border-b-[1px] transition"
+              >
+                09127362770
+              </Link>
+            </h3>
 
             <div className="flex items-center">
               <h3
@@ -91,8 +99,22 @@ export default function Footer() {
           </div>
           <div className="w-full flex max-md:flex-col-reverse justify-between items-center">
             <h3 className="text-lg">
-              <span className="mr-4">021- 88 72 98 45</span>{" "}
-              <span>021- 88 55 29 48</span>
+              <span className="mr-4">
+                <Link
+                  href="tel:02188729845"
+                  className="hover:border-b-[1px] transition"
+                >
+                  021- 88 72 98 45
+                </Link>
+              </span>{" "}
+              <span>
+                <Link
+                  href="tel:02188552948"
+                  className="hover:border-b-[1px] transition"
+                >
+                  021- 88 55 29 48
+                </Link>
+              </span>
             </h3>
 
             <div className="flex items-center">
@@ -155,7 +177,9 @@ export default function Footer() {
               <ul className="list-none flex flex-col justify-evenly">
                 {serviceList.map((item) => (
                   <li key={generateId()} className=" text-gray-600 font-kalame">
-                    {item}
+                    <Link href="#" className="hover:border-b-[1px] transition">
+                      {item}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -166,7 +190,9 @@ export default function Footer() {
               <ul className="list-none flex flex-col justify-evenly">
                 {pagesList.map((item) => (
                   <li key={generateId()} className=" text-gray-600 font-kalame">
-                    {item}
+                    <Link href="#" className="hover:border-b-[1px] transition">
+                      {item}
+                    </Link>
                   </li>
                 ))}
               </ul>
