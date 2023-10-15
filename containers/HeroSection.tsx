@@ -15,7 +15,10 @@ export default function HeroSection() {
     </>
   );
   return (
-    <article className="w-full max-w-[1200px] h-auto max-lg:h-[800px] max-lg:flex-col max-lg:justify-evenly flex justify-between items-center px-10 my-10 max-md:px-2">
+    <article
+      id="hero-section"
+      className="w-full max-w-[1200px] h-auto max-lg:h-[800px] max-lg:flex-col max-lg:justify-evenly flex justify-between items-center px-10 my-10 max-md:px-2"
+    >
       <VisualBanner src={herophoto} hero />
       <FeaturedSection
         title={title}

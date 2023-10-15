@@ -15,6 +15,7 @@ import union from "@/public/assets/icons/Union.svg";
 export default function HomePage() {
   return (
     <main
+      id="home"
       className={`w-full h-full mx-auto mt-44 flex flex-col items-center bg-cover bg-left `}
     >
       <Image

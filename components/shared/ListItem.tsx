@@ -11,7 +11,7 @@ export default function ListItem({ items }: { items: ListItems }) {
         key={generateId()}
         onClick={() => {}}
       >
-        <Link href="#" key={generateId()}>
+        <Link href={`${id === "/" ? `${id}` : `#${id}`}`} key={generateId()}>
           {text}
         </Link>
       </li>

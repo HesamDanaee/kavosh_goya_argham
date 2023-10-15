@@ -14,7 +14,7 @@ import { generateId } from "@/utils/helpers";
 
 export default function Footer() {
   return (
-    <footer className="w-full h-[1200px] max-md:h-[1300px]">
+    <footer id="footer" className="w-full h-[1200px] max-md:h-[1300px]">
       {/* Section 1 */}
       <section className="w-full h-4/6 max-md:h-1/2 bg-gray-900 text-white font-kalame flex justify-center">
         <div className="w-2/3 max-w-[1000px] h-full text-white font-kalame flex flex-col justify-evenly items-center py-4 max-md:text-center">

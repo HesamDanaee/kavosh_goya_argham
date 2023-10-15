@@ -14,7 +14,10 @@ import chevronDown from "@/public/assets/icons/arrow-down.svg";
 export default function Principles() {
   const [tab, setTab] = useState(1);
   return (
-    <section className="w-full h-auto flex-col flex justify-center items-center relative max-sm:py-12">
+    <section
+      id="principles"
+      className="w-full h-auto flex-col flex justify-center items-center relative max-sm:py-12"
+    >
       <div className="max-md:w-full flex flex-col items-center">
         <h2 className="font-kalame text-2xl font-[900] relative py-4 after:w-1/3 after:h-1 after:bg-blue-600 after:absolute after:left-1/3 after:bottom-0">
           نکات طلایی برای مدیران
@@ -43,22 +46,24 @@ export default function Principles() {
           </span>
         </div>
       </div>
-      {/* <Image
-        src={union}
-        width={300}
-        height={300}
-        alt="background"
-        objectFit="cover"
-        className="absolute -left-24 max-sm:w-[40%]"
-      />
-      <Image
-        src={union2}
-        width={300}
-        height={300}
-        alt="background"
-        objectFit="cover"
-        className="absolute -right-24 max-sm:w-[40%]"
-      /> */}
+      <div className="w-[80%] h-2/3 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 max-lg:hidden -z-10">
+        <Image
+          src={union}
+          width={300}
+          height={300}
+          alt="background"
+          objectFit="cover"
+          className="absolute -left-24 max-sm:w-[40%]"
+        />
+        <Image
+          src={union2}
+          width={300}
+          height={300}
+          alt="background"
+          objectFit="cover"
+          className="absolute -right-24 max-sm:w-[40%]"
+        />
+      </div>
       <Accordion category={tab} />
       <h3 className="flex text-blue-500 font-[500] hover:cursor-pointer hover:text-blue-600 group">
         <Image

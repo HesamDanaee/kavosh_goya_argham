@@ -1,7 +1,7 @@
 const links = [
   {
     text: "مقالات",
-    id: "magazine",
+    id: "/",
   },
 
   {
@@ -18,7 +18,7 @@ const links = [
   },
   {
     text: "صفحه اصلی",
-    id: "main",
+    id: "/",
   },
 ];
 

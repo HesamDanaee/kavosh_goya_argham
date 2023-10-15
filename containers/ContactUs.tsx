@@ -12,7 +12,10 @@ import cube_2 from "@/public/assets/icons/cube-2.svg";
 
 export default function ContactUs() {
   return (
-    <section className="w-full h-[1200px] max-md:h-[1000px] my-20  flex justify-center items-center">
+    <section
+      id="contactus"
+      className="w-full h-[1200px] max-md:h-[1000px] my-20  flex justify-center items-center"
+    >
       <div className="w-[90%] max-md:w-full max-w-[1200px] h-[500px] max-md:h-full flex px-10 max-md:px-0 justify-between items-center bg-blue-500 rounded-lg relative max-lg:justify-center">
         <Image
           src={union}

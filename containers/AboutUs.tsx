@@ -68,7 +68,10 @@ export default function AboutUs() {
   };
 
   return (
-    <section className="w-full max-w-[1200px] h-[800px] relative flex max-md:flex-col-reverse max-md:h-[1000px] justify-end max-md:justify-evenly items-center">
+    <section
+      id="aboutus"
+      className="w-full max-w-[1200px] h-[800px] relative flex max-md:flex-col-reverse max-md:h-[1000px] justify-end max-md:justify-evenly items-center"
+    >
       <Image
         src={sliderBg}
         width={500}
