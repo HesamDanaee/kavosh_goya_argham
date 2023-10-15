@@ -1,5 +1,6 @@
 import Button from "./Button";
 import Image from "next/image";
+import Link from "next/link";
 
 interface Porps {
   title: string | JSX.Element;
@@ -42,18 +43,19 @@ export default function FeaturedSection({
       <p className="text-sm font-regular lg:my-4 text-gray-600 leading-6 rtl">
         {text}
       </p>
-
-      <Button
-        bg="bg-light-blue"
-        color="text-white"
-        margin="mx-4"
-        padding="px-5 py-3"
-        rounded="rounded-md"
-        size="text-md"
-        text={buttonText}
-        hover="hover:bg-blue-700"
-        rest="font-[500] max-md:px-3 max-md:py-2 max-md:text-sm shadow-level_1 hover:shadow-none transition"
-      />
+      <Link href={"#contactus"}>
+        <Button
+          bg="bg-light-blue"
+          color="text-white"
+          margin="mx-4"
+          padding="px-5 py-3"
+          rounded="rounded-md"
+          size="text-md"
+          text={buttonText}
+          hover="hover:bg-blue-700"
+          rest="font-[500] max-md:px-3 max-md:py-2 max-md:text-sm shadow-level_1 hover:shadow-none transition"
+        />
+      </Link>
     </section>
   );
 }
