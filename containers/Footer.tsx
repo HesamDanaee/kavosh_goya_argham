@@ -27,7 +27,7 @@ export default function Footer() {
           />
 
           <h2
-            className="text-2xl"
+            className="text-2xl font-kalame"
             style={{
               direction: "rtl",
             }}
@@ -36,7 +36,7 @@ export default function Footer() {
           </h2>
 
           <h1
-            className="text-2xl font-[900]"
+            className="text-2xl font-[900] font-kalame"
             style={{
               direction: "rtl",
             }}
@@ -129,7 +129,7 @@ export default function Footer() {
               alt="logo"
               className="w-[200px] h-auto"
             />
-            <h3 className="my-4">
+            <h3 className="my-4 text-sm">
               شرکت کاوش گویا ارقام با بیش از یک دهه فعالیت و با هدف ایجاد یک
               شرکت حسابداری و مالیاتی جهت ارائه کلیه خدمات مالی از جمله انجام
               امور حسابداری به صورت تمام وقت
@@ -151,21 +151,21 @@ export default function Footer() {
           <div className="w-1/2 max-md:w-full flex justify-between items-center">
             {/* Services */}
             <div style={{ direction: "rtl" }} className="text-lg">
-              <h3>خدمات</h3>
+              <h3 className="text-md font-bold font-kalame">خدمات</h3>
               <ul className="list-none flex flex-col justify-evenly">
                 {serviceList.map((item) => (
-                  <li key={generateId()} className=" text-gray-600">
+                  <li key={generateId()} className=" text-gray-600 font-kalame">
                     {item}
                   </li>
                 ))}
               </ul>
             </div>
             {/* Pages */}
-            <div style={{ direction: "rtl" }} className="text-lg ">
-              <h3>صفحات</h3>
+            <div style={{ direction: "rtl" }} className="text-lg">
+              <h3 className="text-md font-bold font-kalame">صفحات</h3>
               <ul className="list-none flex flex-col justify-evenly">
                 {pagesList.map((item) => (
-                  <li key={generateId()} className=" text-gray-600">
+                  <li key={generateId()} className=" text-gray-600 font-kalame">
                     {item}
                   </li>
                 ))}

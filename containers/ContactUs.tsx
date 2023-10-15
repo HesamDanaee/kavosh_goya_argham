@@ -37,11 +37,11 @@ export default function ContactUs() {
           className="w-auto h-auto absolute left-1/2 bottom-0"
         />
         <Form />
-        <div className="w-1/3 text-white rtl font-kalame max-lg:hidden">
-          <h1 className="text-4xl font-[900] mb-4">
+        <div className="w-1/3 text-white rtl max-lg:hidden">
+          <h1 className="text-4xl font-kalame font-[900] mb-4">
             ما اینجاییم تا به شما کمک کنیم در تمام امور مالیاتی و حسابرسی شما
           </h1>
-          <h3 className="text-2xl font-[500]">
+          <h3 className="text-2xl font-kalame font-[500]">
             کافیه فرم بالا رو تکمیل کنی تا ما جهت مشاوره تلفنی با شما تماس
             بگیریم
           </h3>

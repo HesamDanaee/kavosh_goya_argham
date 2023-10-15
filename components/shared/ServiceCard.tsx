@@ -18,10 +18,10 @@ export default function ServiceCatd({ icon, title, text, unique }: Props) {
       }`}
     >
       {/* Iocn and Title Wrapper */}
-      <div className="flex flex-row-reverse break-normal">
+      <div className="flex flex-row-reverse items-center break-normal">
         <Image src={icon} width={30} height={30} alt="icon" />
         <h3
-          className={`text-sm font-[500] leading-6 mx-6 ${
+          className={`text-md font-bold leading-6 mx-6 ${
             unique ? "text-white" : "text-black"
           }`}
         >
@@ -29,7 +29,7 @@ export default function ServiceCatd({ icon, title, text, unique }: Props) {
         </h3>
       </div>
       <p
-        className={`text-xs leading-6 ${
+        className={`text-sm leading-6 ${
           unique ? "text-white" : "text-gray-800"
         }`}
       >

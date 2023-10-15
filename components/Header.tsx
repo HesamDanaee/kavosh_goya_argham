@@ -21,15 +21,15 @@ export default function Header() {
       }`}
     >
       <Button
-        bg="bg-blue-600"
+        bg="bg-light-blue"
         size="text-sm"
         color="text-white"
         margin=""
-        padding="px-5 py-3"
-        rounded="rounded-md"
-        hover="hover:bg-blue-700 "
+        padding="px-6 py-3"
+        rounded="rounded-lg"
+        hover="hover:bg-blue-600 hover:shadow-md"
         text="ارتباط با ما"
-        rest="px-2 py-2 text-xs"
+        rest="px-2 py-2"
       />
       <div className="w-[70%] max-lg:w-auto max-w-[800px] flex justify-between items-center ">
         <List>

@@ -3,7 +3,6 @@
 import { useForm, SubmitHandler } from "react-hook-form";
 
 import Button from "./shared/Button";
-import { ChangeEvent } from "react";
 
 interface IFormSubmit {
   name: string;
@@ -126,9 +125,7 @@ export default function Form() {
             />
           </div>
         </div>
-
         {/* Description */}
-
         <div className="w-full flex flex-col justify-between ">
           <label
             htmlFor="description "
@@ -144,20 +141,20 @@ export default function Form() {
               direction: "rtl",
             }}
           />
-        </div>
+        </div>{" "}
+        <Button
+          bg="bg-slate-500"
+          color="text-white"
+          hover="hover:bg-slate-600"
+          margin="my-3"
+          padding="p-4"
+          rounded="rounded-lg"
+          size="text-md"
+          text="ارسال درخواست"
+          rest="w-full"
+          onClick={handleSubmit(onSubmit)}
+        />
       </form>
-      <Button
-        bg="bg-slate-500"
-        color="text-white"
-        hover="hover:bg-slate-600"
-        margin="my-3"
-        padding="p-4"
-        rounded="rounded-lg"
-        size="text-md"
-        text="ارسال درخواست"
-        rest="w-full"
-        onClick={handleSubmit(onSubmit)}
-      />
     </section>
   );
 }

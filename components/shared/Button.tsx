@@ -25,8 +25,9 @@ export default function Button({
 }: styles) {
   return (
     <button
-      className={`${bg} ${color} ${size} ${padding} ${margin} ${rounded} ${hover} ${rest} transition-all`}
+      className={`${bg} ${color} ${size} ${padding} ${margin} ${rounded} ${hover} ${rest} transition duration-100 ease-out`}
       onClick={onClick}
+      type="submit"
     >
       {text}
     </button>

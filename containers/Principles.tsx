@@ -14,7 +14,7 @@ import chevronDown from "@/public/assets/icons/arrow-down.svg";
 export default function Principles() {
   const [tab, setTab] = useState(1);
   return (
-    <section className="w-full h-auto flex-col max-md:h-[800px] flex justify-center items-center relative">
+    <section className="w-full h-auto flex-col flex justify-center items-center relative max-sm:py-12">
       <div className="max-md:w-full flex flex-col items-center">
         <h2 className="font-kalame text-2xl font-[900] relative py-4 after:w-1/3 after:h-1 after:bg-blue-600 after:absolute after:left-1/3 after:bottom-0">
           نکات طلایی برای مدیران

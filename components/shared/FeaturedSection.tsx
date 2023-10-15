@@ -39,12 +39,12 @@ export default function FeaturedSection({
         )}
       </div>
 
-      <p className="text-sm font-[500] lg:my-4 text-gray-600 leading-6 rtl">
+      <p className="text-sm font-regular lg:my-4 text-gray-600 leading-6 rtl">
         {text}
       </p>
 
       <Button
-        bg="bg-blue-600"
+        bg="bg-light-blue"
         color="text-white"
         margin="mx-4"
         padding="px-5 py-3"
