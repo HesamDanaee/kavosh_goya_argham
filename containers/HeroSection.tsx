@@ -9,8 +9,8 @@ import acountantcard from "@/public/assets/icons/acountantcard.svg";
 export default function HeroSection() {
   const title = (
     <>
-      <span className="font-bold"> انجام کلیه </span>
-      امور مالی، <span className="font-bold"> حسابداری و </span>
+      <span className="font-black"> انجام کلیه </span>
+      امور مالی، <span className="font-black"> حسابداری و </span>
       مشاوره مالیاتی
     </>
   );

@@ -94,7 +94,7 @@ export default function AboutUs() {
       <Slider data={sliderData} slideIndex={slide} sliderRef={sliderRef} />
 
       <div className="h-1/5 max-md:h-auto flex flex-col justify-between items-end">
-        <h1 className="text-4xl font-kalame font-[900] text-end">
+        <h1 className="text-4xl font-kalame font-semibold text-end mb-2">
           درباره ما
           <br />
           چه میشنوید؟

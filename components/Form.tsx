@@ -24,7 +24,7 @@ export default function Form() {
 
   return (
     <section className="w-[600px] h-[600px] max-md:w-[90%] max-md:h-auto  px-12 py-8 flex flex-col justify-evenly bg-white rounded-md shadow-2xl lg:-translate-y-28 lg:translate-x-6 z-[100]">
-      <h2 className="text-black text-2xl font-kalame font-[900] text-end">
+      <h2 className="text-black text-2xl font-kalame font-semibold text-end">
         فرم درخواست مشاوره
       </h2>
       <form className="w-full h-auto flex flex-col justify-evenly items-center">
@@ -33,7 +33,7 @@ export default function Form() {
           <div className="basis-1 max-md:w-full flex flex-col justify-between items-end">
             <label
               htmlFor="email"
-              className="text-md font-kalame font-[600] my-4"
+              className="text-md font-kalame font-medium my-4"
             >
               ایمیل
             </label>
@@ -58,7 +58,7 @@ export default function Form() {
           <div className="basis-1 max-md:w-full flex flex-col justify-between items-end">
             <label
               htmlFor="name"
-              className="text-md font-kalame font-[600] my-4"
+              className="text-md font-kalame font-medium my-4"
             >
               نام و نام خانوادگی
             </label>
@@ -83,7 +83,7 @@ export default function Form() {
             {/* Company Name (optional) */}
             <label
               htmlFor="company"
-              className="text-md font-kalame font-[600] my-4"
+              className="text-md font-kalame font-medium my-4"
             >
               نام شرکت (اختیاری)
             </label>
@@ -97,7 +97,7 @@ export default function Form() {
             {/* Number */}
             <label
               htmlFor="number"
-              className="text-md font-kalame font-[600] my-4"
+              className="text-md font-kalame font-medium my-4"
             >
               شماره تماس
             </label>
@@ -129,7 +129,7 @@ export default function Form() {
         <div className="w-full flex flex-col justify-between ">
           <label
             htmlFor="description "
-            className="text-md font-kalame font-[600] my-4 text-end"
+            className="text-md font-kalame font-medium my-4 text-end"
           >
             توضیحات
           </label>

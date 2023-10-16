@@ -37,12 +37,14 @@ export default function Footer() {
           </h2>
 
           <h1
-            className="text-2xl font-[900] font-kalame"
+            className="text-2xl font-semibold font-kalame"
             style={{
               direction: "rtl",
             }}
           >
-            با ما یک آرامش حساب ای را تجربه کنید!
+            با ما یک آرامش{" "}
+            <span className="text-light-blue font-semibold">حساب ای</span> را
+            تجربه کنید!
           </h1>
 
           <div className="w-full flex max-md:flex-col-reverse justify-between items-center">
@@ -176,7 +178,10 @@ export default function Footer() {
               <h3 className="text-md font-bold font-kalame">خدمات</h3>
               <ul className="list-none flex flex-col justify-evenly">
                 {serviceList.map((item) => (
-                  <li key={generateId()} className=" text-gray-600 font-kalame">
+                  <li
+                    key={generateId()}
+                    className=" text-gray-600 font-kalame font-medium"
+                  >
                     <Link href="#" className="hover:border-b-[1px] text-sm">
                       {item}
                     </Link>
@@ -189,7 +194,10 @@ export default function Footer() {
               <h3 className="text-md font-bold font-kalame">صفحات</h3>
               <ul className="list-none flex flex-col justify-evenly">
                 {pagesList.map((item) => (
-                  <li key={generateId()} className=" text-gray-600 font-kalame">
+                  <li
+                    key={generateId()}
+                    className=" text-gray-600 font-kalame font-medium"
+                  >
                     <Link
                       href="#"
                       className="hover:border-b-[1px] transition text-sm"
@@ -204,7 +212,7 @@ export default function Footer() {
         </div>
         <div className="w-full py-8 border-t-[1px] border-gray-200">
           <h4
-            className="text-sm font-kalame text-gray-500 text-center tracking-wider"
+            className="text-xs font-medium font-kalame text-gray-500 text-center tracking-wider"
             style={{
               direction: "rtl",
             }}
